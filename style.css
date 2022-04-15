@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --bg:#06d0ff;
+}
+body{
+  min-height: 3000px
+}
+nav, .dropdown-menu{
+  background: #06d0ff;
+
+}
+section{
+  background: var(--bg);
+  width: 100%;
+  /* background: red; */
+}
+.carousel {
+  max-width: 600px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+/* =============FOOTER============= */
+.footer {
+  padding: 0;
+  margin: 0;
+  background: #24262b;
+  padding: 70px 0;
+  line-height: 1.5;
+}
+.footer .cntn{
+  max-width: 1170px;
+  /* background: red; */
+  margin: auto;
+}
+.footer .cntn .roww{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .cntn .roww .footer-cols{
+  width: 25%;
+  padding: 30px 60px;
+  /* background: red; */
+}
+.footer .cntn .roww .footer-cols h4{
+  font: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer .cntn .roww .footer-cols h4::before{
+  content: '';
+  position:absolute;
+  left: 0;
+  bottom: -10px;
+  background: #06d0ff;
+  height: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+.footer .cntn .roww .footer-cols h4:hover::before{
+  width: 80px;
+}
+.footer .cntn .roww .footer-cols ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer .cntn .roww .footer-cols ul li{
+  text-decoration: none;
+  list-style: none;
+  /* padding: 0; */
+  transform: translateX(-30px);
+}
+.footer .cntn .roww .footer-cols ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.cntn .roww .footer-cols ul li a:hover{
+  color: #fff;
+  padding-left: 8px;
+  
+  
+}
+.cntn .roww .footer-cols .sosial-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.cntn .roww .footer-cols .sosial-links a:hover{
+  color: #06d0ff;
+  background: #fff;
+}
+
+@media (max-width:850px) {
+  .footer .cntn .roww .footer-cols{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:496px) {
+  .footer .cntn .roww .footer-cols{
+    width: 100%;
+    margin: 0;
+    /* padding: 0; */
+    /* background: red; */
+    /* margin-bottom: 30px; */
+  }
+}
